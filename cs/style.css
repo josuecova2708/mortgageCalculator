@@ -1,0 +1,205 @@
+*{
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+font-family:'Plus Jakarta Sans'
+}
+
+.main_container{
+  gap: 36px;
+ }
+ .clear_button{
+    color: hsl(200, 26%, 54%);
+ }
+ .clear_button:hover{
+    color:hsl(201, 27%, 29%) ;
+ }
+ p{ 
+    color:hsl(200, 26%, 54%) !important;
+ }
+ h6{
+    color:hsl(200, 28%, 43%) !important;
+ }
+label{
+    width: 80%;
+    height: 40px;
+    border:solid hsl(200, 26%, 54%) 1px;
+    align-self: center;
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+label:hover{
+border: solid hsl(200, 24%, 40%) 2px;
+}
+label:focus-within{
+    border-color:hsl(61, 70%, 52%) ;
+}
+label:focus-within figure{
+background-color: hsl(61, 70%, 52%);
+}
+label:focus-within svg{
+    fill:hsl(202, 55%, 16%);    
+}
+    
+ .inp_one svg{
+    fill:hsl(200, 26%, 54%);
+ }
+ .inp_one figure{
+width: 35px;
+height: 100%;
+
+ }
+ figure{
+    background-color:  hsl(202, 86%, 94%);
+ }
+
+.input_data{
+width: 80%;
+border: none;
+padding:5px;
+outline: none;
+cursor: pointer;
+}
+.input_choice{
+    cursor: pointer;
+   accent-color: hsl(53, 100%, 33%);
+}
+
+.label_radio{
+    border-radius: 4px;
+    height: 45px;
+    cursor:unset;
+}
+.label_radio:hover{
+border: solid 2px hsl(61, 70%, 52%);
+}
+.label_radio p{
+    color: hsl(202, 55%, 16%) !important;
+}
+.input_choice[type="radio"]:checked ~ .label_radio,
+.label_radio:has(.input_choice[type="radio"]:checked) {
+    background-color: hsla(61, 70%, 52%, 0.175) ;
+}
+
+
+.form_but{
+    height: 50px;
+    width: 70%;
+    border-radius: 24px;
+   background-color:hsl(61, 70%, 52%);
+}
+.form_but:hover{
+    background-color: hsla(61, 70%, 52%, 0.533);
+}
+.second_part{
+    width: 100%;
+    height: 55vh;
+    background-color:hsl(202, 55%, 16%); 
+}
+.third_part{
+    width: 100%;
+    height: 60vh;
+    background-color:hsl(202, 55%, 16%);
+}
+.container_lime{
+    width: 80%;
+    height: 35vh;
+    background-color: hsl(61, 70%, 52%);
+    border-radius: 8px;
+    padding-top: 8px;
+    gap: 10px;
+}
+.inside_lime{
+    width: 100%;
+    height: 100%;
+    background-color: hsl(201, 77%, 9%);   
+}
+.inside_lime h3{
+    font-size: 16px;
+}
+hr{
+    height: 2px;
+   background-color: hsl(202, 86%, 94%); 
+
+}
+.text_lime{
+    color: hsl(61, 70%, 52%);
+    font-size: 36px;
+}
+.text_gray{
+    color: hsl(202, 86%, 94%);
+    font-size: 24px;
+}
+.error{
+    border-color: red;
+}
+
+@media (min-width:992px) {
+    header{
+        height: 15% !important;
+        
+    }
+    .main_container{
+        gap:0;
+       width: 1028px;
+       height: 540px;
+       margin: auto;
+       margin-top: 100px;
+       border-radius: 8px;
+       overflow: hidden;
+       box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    }
+    .first_part{
+    width: 50%;
+    }
+    h1{
+    font-size: 24px;
+    }
+    .mortgage_term{
+        width: 150px;
+        align-self: start;
+        margin-left: 3rem;
+    }
+
+    .box_lg_one{
+     width: 50% !important;
+    }
+    .box_lg_two{ 
+     width: 50% !important;
+    }
+    .box_lg_two h6{
+        margin-left: 54px !important;
+    }
+    .interest_rate{
+        width: 150px;
+    }
+    .second_part{
+        width: 50%;
+        height: 100%;
+        border-bottom-left-radius: 64px;
+    }
+    .third_part{
+        width: 50%;
+        height: 100%;
+        border-bottom-left-radius: 64px;
+    }
+    .container_lime{
+        height: 50%;
+    }
+    .inside_lime h3{
+        font-size: 16px;
+    }
+    .text_lime{
+        color: hsl(61, 70%, 52%);
+        font-size: 48px;
+    }
+    .form_but{
+        width: 60%;
+        align-self: start !important;
+        margin-left: 3rem;
+    }
+    
+}
